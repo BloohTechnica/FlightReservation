@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AdminMenuController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="720.0" prefWidth="1280.0">
+         <right>
+            <AnchorPane prefHeight="720.0" prefWidth="92.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <FontAwesomeIcon fx:id="menuButton" fill="#6a89cc" glyphName="LIST" layoutX="29.0" layoutY="57.0" onMouseClicked="#openMenu" size="35" />
+               </children>
+            </AnchorPane>
+         </right>
+         <center>
+            <AnchorPane prefHeight="720.0" prefWidth="1131.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <AnchorPane fx:id="menuContainer" prefHeight="720.0" prefWidth="317.0" stylesheets="@Style2.css">
+         <children>
+            <Button fx:id="FlightsButton" layoutX="-6.0" layoutY="242.0" mnemonicParsing="false" onAction="#FlightsManagement" onMouseClicked="#flightsFocus" prefHeight="60.0" prefWidth="190.0" text="Flights" />
+            <Button fx:id="AirlinesButton" layoutX="-6.0" layoutY="317.0" mnemonicParsing="false" onAction="#AirlineManagement" onMouseClicked="#airlinesFocus" prefHeight="60.0" prefWidth="190.0" text="Airlines" />
+            <Button fx:id="AirportsButton" layoutX="-6.0" layoutY="392.0" mnemonicParsing="false" onAction="#AirportsManagement" onMouseClicked="#airportsFocus" prefHeight="60.0" prefWidth="190.0" text="Airports" />
+            <Button fx:id="UsersButton" layoutX="-6.0" layoutY="466.0" mnemonicParsing="false" onAction="#userManagement" onMouseClicked="#userFocus" prefHeight="60.0" prefWidth="190.0" text="Users" />
+            <FontAwesomeIcon fill="WHITE" glyphName="ANGLE_LEFT" layoutX="297.0" layoutY="348.0" onDragDetected="#back2" onMouseClicked="#back" opacity="0.61" scaleY="1.5" size="35" />
+            <Button fx:id="logOutButton" layoutX="-6.0" layoutY="540.0" mnemonicParsing="false" onAction="#logOut" onMouseClicked="#userFocus" prefHeight="60.0" prefWidth="190.0" text="Logout" />
+            <ImageView fitHeight="312.0" fitWidth="356.0" layoutX="3.0" layoutY="-70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../FlightLogoWhite.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

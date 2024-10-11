@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="731.0" prefWidth="771.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LogInForAdmin">
+   <children>
+      <AnchorPane fx:id="logInPane" layoutX="100.0" layoutY="7.0" prefHeight="717.0" prefWidth="572.0" style="-fx-background-radius: 30; -fx-background-color: white;" stylesheets="@../Style.css">
+         <children>
+            <FontAwesomeIcon fx:id="closeButton" fill="#3871c1" glyphName="ARROW_LEFT" layoutX="27.0" layoutY="63.0" onMouseClicked="#close" size="30" />
+            <ImageView fitHeight="398.0" fitWidth="467.0" layoutX="87.0" layoutY="-84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../FlightLogo.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="userNameAdmin" focusTraversable="false" layoutX="149.0" layoutY="275.0" prefHeight="48.0" prefWidth="274.0" promptText="Username" style="-fx-background-color: transparent;" stylesheets="@Style2.css">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordAdmin" focusTraversable="false" layoutX="149.0" layoutY="359.0" prefHeight="48.0" prefWidth="274.0" promptText="Password" style="-fx-background-color: transparent;" stylesheets="@Style2.css">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="logInButtonAdmin" layoutX="214.0" layoutY="466.0" mnemonicParsing="false" onAction="#logInAsAdmin" prefHeight="40.0" prefWidth="145.0" text="Log In">
+               <stylesheets>
+                  <URL value="@Style2.css" />
+                  <URL value="@Style2.css" />
+               </stylesheets></Button>
+            <Label layoutX="149.0" layoutY="232.0" text="Enter Admin credentials" textFill="#3871c1">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="invalidLabel" layoutX="149.0" layoutY="431.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

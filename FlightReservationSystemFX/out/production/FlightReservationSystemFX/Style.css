@@ -1,0 +1,66 @@
+#LogInButton, #RegisterButton, #registerButton2 {
+    -fx-background-color: linear-gradient(to bottom right, #1e3c72, #6a89cc);
+    -fx-font-family: 'Calibri';
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-border-radius: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 2, 2);
+    -fx-transition: all 0.3s ease;
+}
+
+#LogInButton:hover, #RegisterButton:hover, #registerButton2:hover{
+    -fx-scale-x: 1.1; /* Scales the button horizontally by 10% */
+    -fx-scale-y: 1.1; /* Scales the button vertically by 10% */
+    -fx-background-color: linear-gradient(to bottom right, #4facfe, #00f2fe); /* New gradient color on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 15, 0, 3, 3);
+}
+
+
+#LogInButton:pressed, #RegisterButton:pressed ,#registerButton2:pressed {
+    -fx-background-color: linear-gradient(to bottom right, #1e3c72, #63A4FF); /* Slightly darker gradient on click */
+    -fx-scale-x: 0.95; /* Slightly shrinks the button on click */
+    -fx-scale-y: 0.95; /* Slightly shrinks the button on click */
+    -fx-transition: scale 0.1s ease; /* Quick animation for clicking */
+}
+
+
+/*text fields*/
+#emailField, #passwordField, #emailFieldRegister, #firstNameField, #lastNameField,#confirmPassRegister, #passwordFieldRegister {
+    -fx-border-width: 0px 0px 2px 0px; /* Only the bottom border will have width */
+    -fx-border-color: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient color from left to right */
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 5px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+#emailField:hover, #passwordField:hover,#emailFieldRegister:hover, #firstNameField:hover, #lastNameField:hover,#confirmPassRegister:hover, #passwordFieldRegister:hover {
+    -fx-border-width: 0px 0px 2px 0px; /* Only the bottom border will have width */
+    -fx-border-color: linear-gradient(to right, #00f2fe,#4facfe); /* Gradient color from left to right */
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 5px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+
+#coverPane{
+    -fx-background-color: linear-gradient(to bottom right, #1e3c72, #6a89cc);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 15, 0, 3, 3);
+}
+
+#logInPane{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 15, 0, 3, 3);
+}
+#LogInPane{
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 15, 0, 3, 3);
+}
+
+
